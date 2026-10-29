@@ -9,11 +9,12 @@ no build step.
 
 ## Hosting
 
-Deploy the contents of this folder from the `main` branch of a standalone
-GitHub Pages repository. The included workflow deploys the site, and `CNAME`
-sets its custom domain to `digital.jopism.com`.
+The standalone site is maintained in
+[`JopPank/jopism-digital`](https://github.com/JopPank/jopism-digital).
+The included workflow deploys the repository root from `main`. GitHub Pages
+uses the GitHub Actions source and the custom domain `digital.jopism.com`.
+`CNAME` also records the intended domain.
 
-In the domain's DNS settings, add a CNAME record with host `digital` and
-target `joppank.github.io`. Configure `digital.jopism.com` as the custom
-domain in that repository's **Settings → Pages**. Keep the existing root
-domain and `www` records unchanged.
+The GoDaddy DNS record is a CNAME with host `digital` and target
+`joppank.github.io`. Keep the existing root-domain, `www`, and email records
+unchanged. Check DNS and HTTPS status in the repository's **Settings → Pages**.
